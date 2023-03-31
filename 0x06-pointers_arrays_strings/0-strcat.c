@@ -1,21 +1,26 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _strcat - a function that concatenates two strings.
- * @dest: an input string
- * @src: an input string
- * Return: A pointer to the resulting string
+ * _strcat - concat 2 string
+ * @dest:char
+ * @src:char
+ * Return:char
  */
 char *_strcat(char *dest, char *src)
 {
-	char *temp = dest;
+	char *s = dest;
 
-	while (*dest)
+	while (*dest != '\0')
+	{
 		dest++;
+	}
 
-	while (*src)
-		*dest++ = *src++;
-
+	while (*src != '\0')
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
 	*dest = '\0';
-	return (temp);
+	return (s);
 }
