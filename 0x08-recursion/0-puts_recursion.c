@@ -7,6 +7,12 @@
  */
 void _puts_recursion(char *s);
 {
-	_puts_recursion("play a string");
-	 return (0);
+	if (s*)
+	{
+		_puts(*s);	
+		_puts_recursion("s+2");
+	else
+	       _puts('\n);
+	}	
+	 
 }
